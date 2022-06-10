@@ -1,10 +1,9 @@
-import {useState, useEffect} from "react";
+import {useState} from "react";
 import axios from "../axios";
-import {date} from '../hooks/getDate'
+import {date} from "../hooks/getDate";
 
 function OutputResults({dataOutput, error}) {
-  const [alert, setAlert] = useState({ isTrue: false, type: "", message: "" });
-  const [dateTime, setDateTime] = useState()
+  const [alert, setAlert] = useState({isTrue: false, type: "", message: ""});
 
   const submit = async e => {
     e.preventDefault();
@@ -14,7 +13,7 @@ function OutputResults({dataOutput, error}) {
       dataOutput.kelvin !== 0
     ) {
       try {
-        const res = await axios.post("/calculations.json", {
+        await axios.post("/calculations.json", {
           celsius: dataOutput.celsius,
           fahrenheit: dataOutput.fahrenheit,
           kelvin: dataOutput.kelvin,

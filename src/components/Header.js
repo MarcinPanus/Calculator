@@ -1,4 +1,3 @@
-import React from "react";
 import {Link} from "react-router-dom";
 
 function Header() {
@@ -10,7 +9,10 @@ function Header() {
       </p>
       <p>2. Enter the value you want to convert.</p>
       <p>3. Press the "convert" button to see the results.</p>
-      <p>4. You can save the results to the database by clicking "Save to database" and view the history with the link below:</p>
+      <p>
+        4. You can save the results to the database by clicking "Save to
+        database" and view the history with the link below:
+      </p>
       <Link to="/history">
         Click here to see the history of all calculations you saved
       </Link>

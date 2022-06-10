@@ -35,7 +35,6 @@ function CalculatorPage() {
     }
   };
 
-
   return (
     <div className="container-fluid">
       <Header />
