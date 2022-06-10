@@ -3,8 +3,8 @@ import axios from "../axios";
 import {date} from "../hooks/getDate";
 
 function OutputResults({dataOutput, error}) {
-  const [alert, setAlert] = useState({isTrue: false, type: "", message: ""});
-
+  const [alert, setAlert] = useState({ isTrue: false, type: "", message: "" });
+  
   const submit = async e => {
     e.preventDefault();
     if (

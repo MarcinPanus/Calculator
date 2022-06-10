@@ -23,14 +23,12 @@ function CalculatorPage() {
         celsius: convertTemperature(
           dataInput.scale,
           dataInput.value
-        )[0].toFixed(2),
+        )[0],
         fahrenheit: convertTemperature(
           dataInput.scale,
           dataInput.value
-        )[1].toFixed(2),
-        kelvin: convertTemperature(dataInput.scale, dataInput.value)[2].toFixed(
-          2
-        ),
+        )[1],
+        kelvin: convertTemperature(dataInput.scale, dataInput.value)[2]
       });
     }
   };

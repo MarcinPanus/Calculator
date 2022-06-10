@@ -15,5 +15,5 @@ export function convertTemperature(scale, value) {
     c = k - 273.15;
     f = k * (9 / 5) - 459.67;
   }
-  return [c, f, k];
+  return [c.toFixed(2), f.toFixed(2), k.toFixed(2)];
 }
